@@ -7,7 +7,7 @@
 
 ## 🌟 Key Highlights & Features
 
-### 1. 🔒 Military-Grade On-Device Security & Privacy
+### 1. 🔒  On-Device Security & Privacy
 * **SQLCipher AES-256 Encryption**: Fully encrypted SQLite database (`valutra_secure.db`) supporting 16 KB page size optimization for Android 15.
 * **Hardware-Backed Android Keystore**: Cryptographic database passphrases (`DbKey`) secured in device hardware keystores.
 * **Interactive Stealth & Privacy Shield**: 1-click Stealth Mode toggle (`ivStealthToggle`) on the Home Screen masking sensitive balances with a frosted glass mist overlay.
@@ -44,28 +44,4 @@
 * **Concurrency & Background Jobs**: WorkManager v2.9.1
 * **Cloud & Auth**: Google Drive API (v3), Credentials Play Services Auth, Google Mobile Ads
 
----
 
-## 📦 Building & Publishing APKs
-
-The Gradle build script automatically generates custom-named APK files formatted as `Vaultra_v{version}_{buildType}.apk`.
-
-### 1. Build Signed Release APK
-Run the following Gradle task:
-```bash
-./gradlew assembleRelease
-```
-The output signed APK will be created at:
-`app/build/outputs/apk/release/Vaultra_v1.0_release.apk`
-
-### 2. Build Debug APK
-Run the following Gradle task:
-```bash
-./gradlew assembleDebug
-```
-The output debug APK will be created at:
-`app/build/outputs/apk/debug/Vaultra_v1.0_debug.apk`
-
-### 3. Upload to GitHub Releases / APK Mirror
-* Upload `Vaultra_v1.0_release.apk` to **GitHub Releases** or **APK Mirror**.
-* Ensure your `versionCode` and `versionName` in [`app/build.gradle`](file:///E:/MK%20DigiTek/ValutraJava_v6_191012026_1100PM_New_UI_Theme_Selection/app/build.gradle) are incremented for future updates.
